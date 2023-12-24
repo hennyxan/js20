@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Форма Select -->
+    <form id="selectForm">
+        <label for="tags">Выберите тег: </label>
+        <select id="tags">
+            
+        </select>
+    </form>
+
+    <!-- Форма добавления элементов в Select -->
+    <form id="addElementForm">
+        <label for="inputContent">Содержание элемента: </label>
+        <input type="text" id="inputContent" name="inputContent">
+        <br>
+        <label for="inputClass">Класс элемента: </label>
+        <input type="text" id="inputClass" name="inputClass">
+        <br>
+        <button type="button" onclick="addNewElement()">Добавить элемент</button>
+    </form>
+
+    <!-- Пустая форма с Input-Input и кнопкой создания элементов -->
+    <form id="emptyForm">
+        <label for="emptyInputContent">Input Content: </label>
+        <input type="text" id="emptyInputContent" name="emptyInputContent">
+        <br>
+        <label for="emptyInputClass">Input Class: </label>
+        <input type="text" id="emptyInputClass" name="emptyInputClass">
+        <br>
+        <button type="button" onclick="createNewElement()">Создать элемент</button>
+    </form>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
